@@ -10,6 +10,7 @@ def scenario():
     fixtures = samples()
     routes = {}
     routes['GET /bibliography'] = [response(fixtures['sample.bib'],status=200)]
+    routes['GET /xdata'] = [response(fixtures['xdata.bib'],status=200)]
     routes['GET /cycle'] = [response(fixtures['cycle.bib'],status=200)]
     return routes
 
